@@ -1,0 +1,96 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Verdana', sans-serif; /* Changed font for a different look */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #121212; /* Darker background for a modern feel */
+    padding: 20px;
+}
+
+.container {
+    width: 90%;
+    max-width: 480px; /* Slightly narrower container */
+    text-align: center;
+    background-color: #1f1f1f; /* Darker gray for the container */
+    border-radius: 20px; /* More rounded corners */
+    padding: 30px; /* Increased padding */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7); /* Deeper shadow for more depth */
+}
+
+.title {
+    font-size: 2.2rem; /* Larger title size */
+    padding: 15px;
+    background: linear-gradient(90deg, #1e90ff, #00bfff); /* Gradient background */
+    color: white;
+    border-radius: 15px; /* Adjusted radius */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9); /* More pronounced shadow */
+}
+
+canvas {
+    width: 100%; /* Make canvas responsive */
+    height: auto; /* Maintain aspect ratio */
+    border: 3px solid #1e90ff; /* Brighter blue border */
+    background-color: #282828; /* Dark background for the canvas */
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px; /* Rounded corners for the canvas */
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around; /* Space buttons evenly */
+    margin-top: 20px; /* Increased margin */
+}
+
+button {
+    padding: 15px;
+    font-size: 1.5rem;
+    border: none;
+    background-color: #1e90ff; /* Button background in blue */
+    color: white;
+    border-radius: 12px; /* Adjusted radius */
+    cursor: pointer;
+    flex: 1;
+    margin: 0 10px; /* Increased margin */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+button:hover {
+    background-color: #00bfff; /* Lighter blue on hover */
+}
+
+button:active {
+    transform: scale(0.95); /* Slightly shrink button on click */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .title {
+        font-size: 1.9rem; /* Adjust title size for smaller screens */
+    }
+
+    button {
+        font-size: 1.2rem; /* Adjust button size */
+        padding: 12px; /* Adjust button padding */
+    }
+}
+
+@media (max-width: 400px) {
+    .title {
+        font-size: 1.5rem; /* Further reduce title size for very small screens */
+    }
+
+    button {
+        font-size: 1rem; /* Further adjust button size */
+        padding: 10px; /* Further adjust button padding */
+    }
+}
